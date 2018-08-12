@@ -3,6 +3,13 @@ title: Discover Weekly
 author: DanielG
 date: '2018-08-12'
 slug: discover-weekly
-categories: []
+categories:
+  - R
 tags: []
 ---
+# Copy excel data straight into R dataframes
+
+Quicker than quick... Copy data in excel and straight into an R dataframe! I won't need this data ever again, so why bother saving and loading a file?
+
+
+`read.table(file = "clipboard" , sep = "\t" , header = TRUE)`
