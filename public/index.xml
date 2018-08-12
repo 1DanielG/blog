@@ -17,8 +17,8 @@
       <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/08/12/discover-weekly/</guid>
-      <description>Copy excel data straight into R dataframes Quicker than quick&amp;hellip; Copy data in excel and straight into an R dataframe! I won&amp;rsquo;t need this data ever again, so why bother saving and loading a file?
-read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)</description>
+      <description>Copy excel data straight into R dataframesQuicker than quick…Copy data in excel and straight into an R dataframe! I won’t need this data ever again, so why bother saving and loading a file?
+read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)</description>
     </item>
     
     <item>
