@@ -14,3 +14,41 @@ Quicker than quick...Copy data in excel and straight into an R dataframe! I won'
 read.table(file = "clipboard" , sep = "\t" , header = TRUE)
 ```
 
+# EDA Part 1: 
+
+```{r echo=FALSE , warning=FALSE , message=FALSE}
+library(tidyverse)
+
+data("mtcars")
+
+
+```
+
+
+## Data Summarization 
+
+Usually, I use DataExplorer package for EDA. It produces a nice HTML file containing the EDA. ´create_report function´
+
+
+## Data Summarization - Character
+
+- table() convert factor or character data (categorical data) into counts. Can table singular or multiple categorical inputs and cross-tabulate counts.
+
+- prop.table() modifies the output of table() to proportion.
+
+```{r warning=FALSE , results='hide'}
+mtcars %>% 
+  select_if(is.character) %>% 
+  map(~ table(.) %>% prop.table())
+```
+
+## Data Summarization - Numeric
+
+- This combination is best for seeing how many unique observations are contained in numeric data
+```{r warning=FALSE , results='hide'}
+mtcars %>% 
+  select_if(is.numeric) %>% 
+  map_df(~ unique(.) %>% length()) %>% 
+  gather() %>% 
+  arrange(value)
+```

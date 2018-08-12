@@ -14,3 +14,31 @@ tags: []
 <p>Quicker than quick…Copy data in excel and straight into an R dataframe! I won’t need this data ever again, so why bother saving and loading a file?</p>
 <pre class="r"><code>read.table(file = &quot;clipboard&quot; , sep = &quot;\t&quot; , header = TRUE)</code></pre>
 </div>
+<div id="eda-part-1" class="section level1">
+<h1>EDA Part 1:</h1>
+<div id="data-summarization" class="section level2">
+<h2>Data Summarization</h2>
+<p>Usually, I use DataExplorer package for EDA. It produces a nice HTML file containing the EDA. ´create_report function´</p>
+</div>
+<div id="data-summarization---character" class="section level2">
+<h2>Data Summarization - Character</h2>
+<ul>
+<li><p>table() convert factor or character data (categorical data) into counts. Can table singular or multiple categorical inputs and cross-tabulate counts.</p></li>
+<li><p>prop.table() modifies the output of table() to proportion.</p></li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% 
+  select_if(is.character) %&gt;% 
+  map(~ table(.) %&gt;% prop.table())</code></pre>
+</div>
+<div id="data-summarization---numeric" class="section level2">
+<h2>Data Summarization - Numeric</h2>
+<ul>
+<li>This combination is best for seeing how many unique observations are contained in numeric data</li>
+</ul>
+<pre class="r"><code>mtcars %&gt;% 
+  select_if(is.numeric) %&gt;% 
+  map_df(~ unique(.) %&gt;% length()) %&gt;% 
+  gather() %&gt;% 
+  arrange(value)</code></pre>
+</div>
+</div>

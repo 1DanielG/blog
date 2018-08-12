@@ -18,7 +18,28 @@
       
       <guid>/2018/08/12/discover-weekly/</guid>
       <description>Copy excel data straight into R dataframesQuicker than quick…Copy data in excel and straight into an R dataframe! I won’t need this data ever again, so why bother saving and loading a file?
-read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)</description>
+read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)EDA Part 1:Data SummarizationUsually, I use DataExplorer package for EDA. It produces a nice HTML file containing the EDA. ´create_report function´
+Data Summarization - Charactertable() convert factor or character data (categorical data) into counts.</description>
+    </item>
+    
+    <item>
+      <title>Useful Packages</title>
+      <link>/2018/08/12/useful-packages/</link>
+      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/12/useful-packages/</guid>
+      <description>Simplifying The Art Of Missing Values With simputationYour data has ton of missing values. Imputation is critical for this real-world data set but dealing with missing values can be challenging. Should you just remove the data? Should you interpolate? Should you apply a complex algorithm?
+R package simputation aggregates and simplifies the process of applying imputation techniques from various popular packages. More information here :
+Getting started with simputation</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>Data Profiling Reportcode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
     </item>
     
   </channel>

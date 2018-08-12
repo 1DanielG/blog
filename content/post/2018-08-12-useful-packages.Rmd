@@ -1,0 +1,30 @@
+---
+title: Useful Packages
+author: DanielG
+date: '2018-08-12'
+slug: useful-packages
+categories:
+  - R
+tags:
+  - Package
+---
+# Simplifying The Art Of Missing Values With `simputation`
+
+Your data has ton of missing values. Imputation is critical for this real-world data set but dealing with missing values can be challenging. Should you just remove the data? Should you interpolate? Should you apply a complex algorithm? 
+
+[R package simputation](https://github.com/markvanderloo/simputation) aggregates and simplifies the process of applying imputation techniques from various popular packages. More information here :
+
+[Getting started with simputation](https://cran.r-project.org/web/packages/simputation/vignettes/intro.html)
+
+
+# Reproducibility Taken To The Next Level With `drake`
+
+[Perform reproducible analysis](https://ropensci.github.io/drake/)
+
+What `drake` does well is to help us perform reproducible analysis.It's the idea that any analysis should be able to reproduced in entirety by other people. 
+
+The magic is in the `drake_plan()` function. Basically, we can create an entire workflow with a few steps. Then, (here's the magical part), `drake` remembers if anything changes in the future updating the pieces (data, inputs, variables, etc) adjusting the output accordingly. 
+
+More information here :
+
+[Getting started with drake](https://heartbeat.fritz.ai/weekly-digest-for-data-science-and-ai-python-and-r-volume-3-beb59dd2be30)
