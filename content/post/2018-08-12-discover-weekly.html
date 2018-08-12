@@ -14,6 +14,16 @@ tags: []
 <p>Quicker than quick…Copy data in excel and straight into an R dataframe! I won’t need this data ever again, so why bother saving and loading a file?</p>
 <pre class="r"><code>read.table(file = &quot;clipboard&quot; , sep = &quot;\t&quot; , header = TRUE)</code></pre>
 </div>
+<div id="data-cleaning" class="section level1">
+<h1>Data cleaning:</h1>
+<pre class="r"><code>df %&gt;% 
+tidyr::separate(name, c(&quot;name&quot; , &quot;surname&quot;) , sep = &quot; &quot;, extra = &quot;merge&quot;)
+
+# or
+
+df %&gt;% 
+  stringr::str_split(pattern = &quot; &quot;, n = 2)</code></pre>
+</div>
 <div id="eda-part-1" class="section level1">
 <h1>EDA Part 1:</h1>
 <div id="data-summarization" class="section level2">

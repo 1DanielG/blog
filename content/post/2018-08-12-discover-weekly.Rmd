@@ -14,6 +14,32 @@ Quicker than quick...Copy data in excel and straight into an R dataframe! I won'
 read.table(file = "clipboard" , sep = "\t" , header = TRUE)
 ```
 
+
+# Data cleaning:
+
+```{r echo=FALSE , message=FALSE}
+library(magrittr)
+library(tidyverse)
+
+df <- tibble::tribble(~name,  
+       "Kristen Lockhart",     
+       "Nina Borg Hansen",      
+       "Dimitri Payet",      
+       "Mona Zilian Javid",      
+       "Piruz Stivenson" )
+```
+
+```{r results='hide'}
+df %>% 
+tidyr::separate(name, c("name" , "surname") , sep = " ", extra = "merge")
+
+# or
+
+df %>% 
+  stringr::str_split(pattern = " ", n = 2)
+```
+
+
 # EDA Part 1: 
 
 ```{r echo=FALSE , warning=FALSE , message=FALSE}

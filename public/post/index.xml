@@ -18,8 +18,7 @@
       
       <guid>/2018/08/12/discover-weekly/</guid>
       <description>Copy excel data straight into R dataframesQuicker than quick…Copy data in excel and straight into an R dataframe! I won’t need this data ever again, so why bother saving and loading a file?
-read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)EDA Part 1:Data SummarizationUsually, I use DataExplorer package for EDA. It produces a nice HTML file containing the EDA. ´create_report function´
-Data Summarization - Charactertable() convert factor or character data (categorical data) into counts.</description>
+read.table(file = &amp;quot;clipboard&amp;quot; , sep = &amp;quot;\t&amp;quot; , header = TRUE)Data cleaning:df %&amp;gt;% tidyr::separate(name, c(&amp;quot;name&amp;quot; , &amp;quot;surname&amp;quot;) , sep = &amp;quot; &amp;quot;, extra = &amp;quot;merge&amp;quot;)# ordf %&amp;gt;% stringr::str_split(pattern = &amp;quot; &amp;quot;, n = 2)EDA Part 1:Data SummarizationUsually, I use DataExplorer package for EDA.</description>
     </item>
     
     <item>
