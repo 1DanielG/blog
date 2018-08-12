@@ -6,7 +6,7 @@ slug: discover-weekly
 categories:
   - r
 tags:
-  - functions
+  - function
 ---
 
 ## Copy excel data straight into R dataframes
